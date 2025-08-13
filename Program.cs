@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
-
+//ejemplo 1
 // // PEDIMOS DATOS PERSONALES
 // Console.Write("¿Cómo te llamas? ");
 // string nombre = Console.ReadLine() ?? ""; // Aquí guardamos el nombre que escribe el usuario, usando cadena vacía si es null
@@ -33,6 +33,7 @@ Console.WriteLine("Hello, World!");
 // else
 //     Console.WriteLine("Tienes obesidad.");
 
+//ejemplo 2
 // // CONVERSIÓN DE MONEDA
 // Console.Write("\n¿Cuántos pesos colombianos tienes? ");
 // double pesosColombianos = Convert.ToDouble(Console.ReadLine()); // Pedimos cantidad de dinero
@@ -53,7 +54,7 @@ Console.WriteLine("Hello, World!");
 // Console.WriteLine($"{Math.Round(enEuros, 2)} euros");
 // Console.WriteLine($"{Math.Round(enSoles, 2)} soles peruanos");
 
-
+//ejemplo 3
 
 // bool salir = false;
 // while (!salir)
@@ -87,6 +88,8 @@ Console.WriteLine("Hello, World!");
 //     }
 // }
 
+
+// ejempo 4
 // Console.WriteLine("Bienvenido al Cajero Automático!");
 
 // decimal saldo = 500000m;
@@ -126,6 +129,7 @@ Console.WriteLine("Hello, World!");
 //             {
 //                 Console.WriteLine("Monto inválido.");
 
+//ejemlo 5
 // static void Main()
 // {
 //     Console.WriteLine("Clasificador de Valgo de Rodilla (ángulo en grados)");
@@ -162,7 +166,7 @@ Console.WriteLine("Hello, World!");
 //     }
 // }
 
-ejemplo 1
+//ejemplo 6
 // Dictionary<string, int> lista_productos = new Dictionary<string, int>()
 // {
 //     {"Manzana", 100},
@@ -241,7 +245,7 @@ ejemplo 1
 // }
 // Console.WriteLine("¡Hasta luego!");
 
-// ejemplo 2
+// ejemplo 7
 // Dictionary<int, int> calificaciones_sastisfaccion = new Dictionary<int, int>()
 // {
 //     {1, 0},
@@ -293,6 +297,7 @@ ejemplo 1
 //             break;
 //     }
 // }
+
 
 
 
