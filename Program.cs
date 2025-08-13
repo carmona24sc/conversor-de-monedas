@@ -126,6 +126,173 @@ Console.WriteLine("Hello, World!");
 //             {
 //                 Console.WriteLine("Monto inválido.");
 
+// static void Main()
+// {
+//     Console.WriteLine("Clasificador de Valgo de Rodilla (ángulo en grados)");
+//     Console.WriteLine("1: 0–5°");
+//     Console.WriteLine("2: >5–10°");
+//     Console.WriteLine("3: >10–15°");
+//     Console.WriteLine("4: >15–20°");
+//     Console.WriteLine("5: >20°\n");
+
+//     while (true)
+//     {
+//         Console.Write("Ingresa el ángulo de valgo (°) o escribe 'salir': ");
+//         var entrada = Console.ReadLine();
+
+//         if (entrada?.ToLower() == "salir") break;
+
+//         if (!double.TryParse(entrada, out double angulo) || angulo < 0 || angulo > 90)
+//         {
+//             Console.WriteLine("⚠ Valor inválido. Ingresa un número entre 0 y 90.\n");
+//             continue;
+//         }
+
+//         int rango = angulo <= 5 ? 1 :
+//                     angulo <= 10 ? 2 :
+//                     angulo <= 15 ? 3 :
+//                     angulo <= 20 ? 4 : 5;
+
+//         string descripcion = rango == 1 ? "mínimo/funcionalmente neutro" :
+//                               rango == 2 ? "leve" :
+//                               rango == 3 ? "moderado" :
+//                               rango == 4 ? "marcado" : "severo";
+
+//         Console.WriteLine($"Ángulo: {angulo}° → Rango: {rango} ({descripcion})\n");
+//     }
+// }
+
+ejemplo 1
+// Dictionary<string, int> lista_productos = new Dictionary<string, int>()
+// {
+//     {"Manzana", 100},
+//     {"Pera", 200},
+//     {"Uva", 300},
+// };
+
+// bool salir = false;
+
+// while (!salir)
+// {
+//     Console.WriteLine("\n--- Control de Stock ---");
+//     Console.WriteLine("1. Ver inventario");
+//     Console.WriteLine("2. Agregar producto");
+//     Console.WriteLine("3. Retirar producto");
+//     Console.WriteLine("4. Salir");
+//     Console.Write("Seleccione una opción: ");
+
+//     string opcion = Console.ReadLine();
+
+//     switch (opcion)
+//     {
+//         case "1":
+//             Console.WriteLine("\nInventario actual:");
+//             foreach (var producto in lista_productos)
+//             {
+//                 Console.WriteLine($"Producto: {producto.Key}, Cantidad: {producto.Value}");
+//             }
+//             break;
+
+//         case "2":
+//             Console.Write("Nombre del producto a agregar: ");
+//             string prodAgregar = Console.ReadLine();
+//             Console.Write("Cantidad a agregar: ");
+//             int cantidadAgregar = int.Parse(Console.ReadLine());
+
+//             if (lista_productos.ContainsKey(prodAgregar))
+//                 lista_productos[prodAgregar] += cantidadAgregar;
+//             else
+//                 lista_productos.Add(prodAgregar, cantidadAgregar);
+
+//             Console.WriteLine("Producto agregado correctamente.");
+//             break;
+
+//         case "3":
+//             Console.Write("Nombre del producto a retirar: ");
+//             string prodRetirar = Console.ReadLine();
+//             if (lista_productos.ContainsKey(prodRetirar))
+//             {
+//                 Console.Write("Cantidad a retirar: ");
+//                 int cantidadRetirar = int.Parse(Console.ReadLine());
+//                 if (lista_productos[prodRetirar] >= cantidadRetirar)
+//                 {
+//                     lista_productos[prodRetirar] -= cantidadRetirar;
+//                     Console.WriteLine("Producto retirado correctamente.");
+//                 }
+//                 else
+//                 {
+//                     Console.WriteLine("No hay suficiente stock para retirar esa cantidad.");
+//                 }
+//             }
+//             else
+//             {
+//                 Console.WriteLine("El producto no existe en el inventario.");
+//             }
+//             break;
+
+//         case "4":
+//             salir = true;
+//             break;
+
+//         default:
+//             Console.WriteLine("Opción no válida.");
+//             break;
+//     }
+// }
+// Console.WriteLine("¡Hasta luego!");
+
+// ejemplo 2
+// Dictionary<int, int> calificaciones_sastisfaccion = new Dictionary<int, int>()
+// {
+//     {1, 0},
+//     {2, 0},
+//     {3, 0},
+//     {4, 0},
+//     {5, 0},
+// };
+
+// bool salir_encuesta = false;
+
+// while (!salir_encuesta)
+// {
+//     Console.WriteLine("\n--- Encuesta de Satisfacción ---");
+//     Console.WriteLine("1. Califique nuestro servicio del (1 al 5)");
+//     Console.WriteLine("2. Ver resultados de la encuesta");
+//     Console.WriteLine("3. Salir");
+//     Console.Write("Seleccione una opción: ");
+//     string opcion_encuesta = Console.ReadLine()!;
+
+//     switch (opcion_encuesta)
+//     {
+//         case "1":
+//         Console.Write("califique nuestro servicio del (1 al 5 ): ");
+//         if (int.TryParse(Console.ReadLine(), out int calificacion) && calificacion >= 1 && calificacion <= 5)
+//         {
+//             calificaciones_sastisfaccion[calificacion]++;
+//             Console.WriteLine("Gracias por su calificación.");
+//         }
+//         else
+//         {
+//             Console.WriteLine("Calificación no válida. Intente nuevamente.");
+//         }
+//         break;
+
+//         case "2":
+//         Console.WriteLine("Resultados de la encuesta:");
+//         for (int i = 1; i <= 5; i++)
+//         {
+//             Console.WriteLine($"Calificación {i}: {calificaciones_sastisfaccion[i]} votos");
+//         }
+//         break;
+
+//         case "3":
+//         salir_encuesta = true;
+//         break;
+//         default:
+//         Console.WriteLine("Opción no válida.");
+//             break;
+//     }
+// }
 
 
 
